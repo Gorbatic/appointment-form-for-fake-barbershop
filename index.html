@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Судьбоносный волосок</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="page-header">
+			<h1 class="main-title">Парикмахерская «Судьбоносный Волосок»</h1>
+		</header>
+		<main class="main-index">
+			<section class="appointment-form">
+				<form class="form" method="post" action="https://echo.htmlacademy.ru/courses" enctype="multipart/form-data" oninput="ageoutput.value=age.value" autocomplete="on">
+					<h2 class="form-title">Форма записи</h2>
+					<fieldset class="personal-information-group">
+						<legend>Личные данные</legend>
+						<div class="wrapper">
+							<div class="container">
+								<label class="first-name-label" for="first-name">Имя</label>
+								<input class="first-name-field" id="first-name" name="first-name" type="text"  required autofocus>
+					  	</div>
+							<div class="container">
+								<label class="second-name-label" for="second-name">Фамилия</label>
+								<input class="second-name-field" id="second-name" name="second-name" type="text"  required>
+							</div>
+							<div class="container">
+								<label class="amount-hair-label" for="amount-hair">Количество волос на голове</label>
+								<input class="amount-hair-field" id="amount-hair" name="amount-hair" type="number"  min="0" step="1">
+							</div>
+							<div class="container">
+								<label class="age-label" for="age">Возраст</label>
+								<p class="age-text-range">0 <input id="age" class="age-field" type="range" name="age" min="0" max="122" step="1" value="0"> 122</p>
+								<div class="wrapper-ageoutput">
+									<output class="ageoutput" name="ageoutput">0</output>
+								</div>
+							</div>
+							<div class="container">
+								<label class="color-hair-label" for="color-hair">Цвет волос</label>
+								<input class="color-hair-field" id="color-hair" name="color-hair" type="color"  value="#2F0000">
+							</div>
+							<div class="container">
+								<label class="about-me-label" for="about-me">О себе</label>
+								<textarea class="about-me-field" id="about-me" name="about-me" cols="45" rows="6" placeholder="Опишите желаемую 	прическу... 	Или просто расскажите нам свою интересную историю из жизни!&#41;"></textarea>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="appointment-group">
+						<legend>Запись</legend>
+						<div class="wrapper">
+							<div class="container">
+								<label class="street-label" for="street">Место</label>
+								<select class="street-select" id="street" name="street" required autocomplete="off" data-keep-default>
+									<option value="" selected disabled>Выберете улицу</option>
+									<option value="cherry-mist-street">Улица Вишнёвого Тумана</option>
+									<option value="quiet-waves-embankment">Набережная Тихих Волн</option>
+									<option value="moon-cats-street">Улица Лунных Котов</option>
+									<option value="the-alley-of-holographic-roses">Аллея Голографических Роз</option>
+									<option value="the-dead-end-of-sleepless-dreams">Тупик Бессонных Сновидений</option>
+									<option value="boulevard-of-quantum-bridges">Бульвар Квантовых Мостов</option>
+								</select>
+							</div>
+							<div class="container">
+								<label class="date-and-time-label" for="date-and-time">Дата и время</label>
+								<input class="date-and-time-field" id="date-and-time" name="date-and-time" type="datetime-local"  required>
+							</div>
+							<div class="container">
+								<label class="codeword-label" for="codeword">Кодовое слово</label>
+								<input class="codeword-field" id="codeword" name="codeword" type="text"  value="Расчёска" readonly>
+							</div>
+							<div class="container">
+								<label class="tel-label" for="tel">Номер телефона</label>
+								<input class="tel-field" id="tel" name="tel" type="tel"  placeholder="В формате XXX-HAIR-XXXXX" pattern="[0-9]{3}-HAIR-[0-9]{5}" title="Например: 123-HAIR-45678" required>
+							</div>
+							<div class="container">
+								<label class="email-label" for="email">E-mail</label>
+								<input class="email-field" id="email" name="email" type="email"  placeholder="В формате example@hair.me" required>
+							</div>
+							<div class="container">
+								<label class="movement-label" for="movement">Как доберетесь?</label>
+								<select class="movement-select" id="movement" name="movement" size="5">
+									<option value="on-foot" selected>Пешком</option>
+									<option value="car">На автомобиле</option>
+									<option value="helicopter">На вертолете</option>
+									<option value="ship">На корабле</option>
+									<option value="animal">На коне/осле/верблюде</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="other-offers-group">
+						<legend>Другое</legend>
+						<div class="wrapper">
+							<div class="container">
+								<label class="dish-label" for="dish">Что хотите поесть у нас?</label> 
+								<small class="point">(Для выбора нескольких пунктов зажмите Ctrl/Cmd)</small>
+								<select class="dish-select" id="dish" name="dish[]" multiple size="7">
+									<option value="" selected disabled>— Не выбрано —</option>
+									<optgroup label="🍹 Напитки" class="dish-group-main">
+										<optgroup label="☕ Кофе/Чай" class="dish-group-inner">
+											<option class="dish-option" value="bearded-americano" data-price="250">«Бородатый Американо» — 250 ₽</option>
+											<option class="dish-option" value="razor-latte" data-price="300">«Бритвенный Латте» — 300 ₽</option>
+											<option class="dish-option" value="tea-old-sage" data-price="200">«Чай „Седой Мудрец"» — 200 ₽</option>
+										</optgroup>
+										<optgroup label="🥃 Алкогольные" class="dish-group-inner">
+											<option class="dish-option" value="close-shave" data-price="400">«Закрытая бритва» — 400 ₽</option>
+											<option class="dish-option" value="whiskey-old-beard" data-price="500">«Виски „Старая Борода"» — 500 ₽</option>
+											<option class="dish-option" value="beer-axe" data-price="350">«Пивной топор» — 350 ₽</option>
+										</optgroup>
+										<optgroup label="🫧 Безалкогольные" class="dish-group-inner">
+											<option class="dish-option" value="mojito-zero" data-price="300">«Мохито Zero (как у папы)» — 300 ₽</option>
+											<option class="dish-option" value="grapefruit-raid" data-price="280">«Грейпфрутовый десант» — 280 ₽</option>
+										</optgroup>
+									</optgroup>
+									<optgroup label="🍽️ Блюда" class="dish-group-main">
+										<optgroup label="🍢 Закуски" class="dish-group-inner">
+											<option class="dish-option" value="steak-striptease" data-price="450">«Стриптиз стейка» — 450 ₽</option>
+											<option class="dish-option" value="mustache-chips" data-price="250">«Усатые чипсы» — 250 ₽</option>
+											<option class="dish-option" value="brutal-nachos" data-price="380">«Брутальные начос» — 380 ₽</option>
+										</optgroup>
+										<optgroup label="🍔 Основное" class="dish-group-inner">
+											<option class="dish-option" value="burger-razor" data-price="550">«Бургер „Бритва"» — 550 ₽</option>
+											<option class="dish-option" value="hotdog-lumberjack" data-price="480">«Хот-дог „Дикий лесоруб"» — 480 ₽</option>
+										</optgroup>
+										<optgroup label="🍩 Десерты" class="dish-group-inner">
+											<option class="dish-option" value="cheesecake-dirty-beard" data-price="350">«Чизкейк „Грязная борода"» — 350 ₽</option>
+											<option class="dish-option" value="donut-drill" data-price="200">«Пончики „Дрель"» — 200 ₽</option>
+										</optgroup>
+									</optgroup>
+								</select>
+								<div class="wrapper-total-price-text">
+									<p class="total-price" id="total-price">Итого: 0 ₽</p>
+								</div>
+							</div>
+								<div class="container">
+									<label class="photo-label" for="photo">Покажите нам себя!</label>
+									<input class="photo-field" id="photo" name="photo" type="file">
+								</div>
+								<div class="container">
+									<label class="additional-requests-label" for="additional-requests">Дополнительные пожелания</label>
+									<input class="additional-requests-field" id="additional-requests" name="additional-requests" type="text" 		list="additional-requests-datalist" placeholder="Что-то еще?">
+									<datalist id="additional-requests-datalist">
+										<option value="Хочу барбера мужчину"></option>
+										<option value="Хочу барбера женщину"></option>
+										<option value="Хочу сам себя постричь"></option>
+									</datalist>
+								</div>
+								<div class="container">
+									<div class="our-first-time-container">
+										<p class="answer-text">Впервые у нас?</p>
+										<label><input name="first-time-here" type="radio" value="yes" checked> Да</label>
+										<label><input name="first-time-here" type="radio" value="no"> Нет</label>
+									</div>
+								</div>
+								<div class="container">
+									<div class="newsletter">
+										<label class="newsletter-label" for="newsletter">Подписать вас на рассылку?</label>
+										<input class="newsletter-field" id="newsletter" name="newsletter" type="checkbox" checked>
+									</div>
+								</div>
+							</div>
+					</fieldset>
+					<div class="buttons">
+						<button class="button button-submit" type="submit">Отправить</button>
+						<button class="button button-reset" type="reset">Сбросить</button>
+					</div>				
+				</form>
+			</section>
+		</main>
+
+		<script>
+			// Сохраняет данные формы в localStorage при вводе 
+      if (window.localStorage) {
+  var elements = document.querySelectorAll('[name]');
+
+  for (var i = 0, length = elements.length; i < length; i++) {
+    (function(element) {
+      var name = element.getAttribute('name');
+      var savedValue = localStorage.getItem(name);
+
+      // Для select: пропускаем, если значение пустое И элемент имеет атрибут [data-keep-default]
+      if (element.tagName === 'SELECT' && !savedValue && element.hasAttribute('data-keep-default')) {
+        return;
+      }
+
+      if (savedValue !== null) {
+        element.value = savedValue;
+      }
+
+      element.onkeyup = element.onchange = function() {
+        localStorage.setItem(name, element.value);
+      };
+    })(elements[i]);
+  }
+}
+
+			// Динамический расчёт суммы
+			const selectElement = document.querySelector('.dish-select');
+    	const totalElement = document.getElementById('total-price');
+    
+    	selectElement.addEventListener('change', function() {
+      	const selectedOptions = Array.from(this.selectedOptions);
+      	const total = selectedOptions.reduce((sum, option) => {
+        	return sum + parseInt(option.dataset.price || 0);
+      	}, 0);
+      
+      	totalElement.textContent = `Итого: ${total} ₽`;
+    	});
+    </script>
+	</body>
+</html>

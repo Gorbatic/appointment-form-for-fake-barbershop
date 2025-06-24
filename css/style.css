@@ -1,0 +1,294 @@
+/* Ruslan Display */
+@font-face {
+	font-family: "Ruslan Display";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/fonts/Ruslan_Display/RuslanDisplay.woff2") format("woff2");
+	font-display: swap;
+}
+
+/* Roboto */
+@font-face {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+	font-display: swap;
+}
+
+/* Roboto Mono */
+@font-face {
+	font-family: "Roboto Mono";
+	font-weight: 700;
+	font-style: normal;
+	src: url("/fonts/Roboto_Mono/RobotoMono-Bold.woff2") format("woff2");
+	font-display: swap;
+}
+
+html {
+	min-height: 100vh; 
+
+	background-color: #242239;
+	background-image: url("/img/decorative/purple-full-bg (1).jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	color: #fff;
+
+	display: grid;
+	grid-template-columns: 23% 1fr 23%;
+	grid-template-rows: 10% 1fr;
+
+	margin: 0;
+	min-height: 100%;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+.page-header {
+	grid-column: 1 / -1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	margin-bottom: 13px;
+
+	background-color: #1a3e8a;
+	background-image: url("/img/decorative/purple-light-gradient-background (1).jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-index {
+	grid-column: 2 / 3;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	column-gap: 66px;
+
+	width: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.main-title {
+	font-family: "Ruslan Display", serif;
+	font-size: 34px;
+	line-height: 26px;
+	letter-spacing: 6.8px;
+	color: #91ffb5;
+	text-align: center;
+	text-transform: uppercase;
+
+	margin: 0;
+	margin-bottom: 13px;
+}
+
+.form-title {
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 4px;
+	text-align: center;
+
+	margin: 0;
+}
+
+.personal-information-group,
+.appointment-group,
+.other-offers-group {
+	margin: 0;
+}
+
+.first-name-field,
+.second-name-field,
+.amount-hair-field,
+.street-select,
+.date-and-time-field,
+.codeword-field,
+.tel-field,
+.email-field,
+.additional-requests-field {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	height: 50px;
+  padding: 10px 15px; 
+  box-sizing: border-box; 
+}
+
+.age-text-range {
+	display: flex;
+	align-items: center;
+	
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.age-field {
+	margin: 0;
+
+	width: 100%;
+  box-sizing: border-box; 
+}
+
+.wrapper-ageoutput {
+	text-align: center;
+}
+
+.ageoutput {
+	padding: 5px 15px;
+
+	color: #000;
+
+	background-color: #fff;
+
+	border-radius: 10px;
+}
+
+.color-hair-field {
+	height: 50px;
+	width: 40%;
+
+	padding: 10px 12px;
+}
+
+.about-me-field {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 22px; 
+
+	padding: 10px 15px; 
+}
+
+.movement-select {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+}
+
+.dish-label {
+	margin-bottom: 0;
+}
+
+.point {
+	margin-bottom: 10px;
+}
+
+.dish-select {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+
+	margin-bottom: 10px;
+}
+
+.dish-group-main {
+	color: #0671a8;
+	font-style: italic;
+}
+
+.dish-group-inner {
+	margin-left: 15px;
+}
+
+.dish-option {
+	margin-left: 10px;
+
+	color: #0c00b3;
+	font-weight: bold;
+}
+
+.wrapper-total-price-text {
+	display: flex;
+	justify-content: center;
+}
+
+.total-price {
+	margin: 0;
+	padding: 5px 15px;
+	
+	color: #000;
+
+	background-color: #fff;
+
+	border-radius: 10px;
+}
+
+.photo-field {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+
+	height: 50px;
+}
+
+.answer-text {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.newsletter {
+	display: flex;
+	flex-direction: column;
+}
+
+.newsletter-field {
+	width: 18px;
+  height: 18px;
+	margin: 0px;
+}
+
+.buttons {
+	display: flex;
+
+	margin-top: 5px;
+}
+
+.button {
+	width: 300px;
+	height: 40px;
+
+	font-family: "Roboto Mono", sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+	color: #fff;
+
+	background-color: #1a3e8a;
+
+	border: none;
+}
+
+.button-submit {
+	color: #82ff5b;
+
+	background-image: url("/img/decorative/purple-light-gradient-background (1).jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	margin-left: auto;
+	margin-right: 24px;
+}
+
+.button-reset {
+	color: #ff5b5e;
+
+	background-image: url("/img/decorative/purple-light-gradient-background (1).jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	margin-left: 24px;
+	margin-right: auto;
+}
