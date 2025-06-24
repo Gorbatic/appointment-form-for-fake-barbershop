@@ -3,7 +3,7 @@
 	font-family: "Ruslan Display";
 	font-weight: 400;
 	font-style: normal;
-	src: url("/fonts/Ruslan_Display/RuslanDisplay.woff2") format("woff2");
+	src: url("../fonts/Ruslan_Display/RuslanDisplay.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -12,7 +12,7 @@
 	font-family: "Roboto";
 	font-weight: 400;
 	font-style: normal;
-	src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+	src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -21,7 +21,7 @@
 	font-family: "Roboto Mono";
 	font-weight: 700;
 	font-style: normal;
-	src: url("/fonts/Roboto_Mono/RobotoMono-Bold.woff2") format("woff2");
+	src: url("../fonts/Roboto_Mono/RobotoMono-Bold.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -29,7 +29,7 @@ html {
 	min-height: 100vh; 
 
 	background-color: #242239;
-	background-image: url("/img/decorative/purple-full-bg (1).jpg");
+	background-image: url("../img/decorative/purple-full-bg (1).jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -64,7 +64,7 @@ label {
 	margin-bottom: 13px;
 
 	background-color: #1a3e8a;
-	background-image: url("/img/decorative/purple-light-gradient-background (1).jpg");
+	background-image: url("../img/decorative/purple-light-gradient-background (1).jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -274,7 +274,7 @@ label {
 .button-submit {
 	color: #82ff5b;
 
-	background-image: url("/img/decorative/purple-light-gradient-background (1).jpg");
+	background-image: url("../img/decorative/purple-light-gradient-background (1).jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	
@@ -285,7 +285,7 @@ label {
 .button-reset {
 	color: #ff5b5e;
 
-	background-image: url("/img/decorative/purple-light-gradient-background (1).jpg");
+	background-image: url("../img/decorative/purple-light-gradient-background (1).jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 
